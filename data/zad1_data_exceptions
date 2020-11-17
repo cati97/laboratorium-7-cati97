@@ -1,2 +1,4 @@
 AATG,AAA,Strands must have the same length
 ATA,AGTG,Strands must have the same length
+,G,Strands must have the same length
+G,,Strands must have the same length
