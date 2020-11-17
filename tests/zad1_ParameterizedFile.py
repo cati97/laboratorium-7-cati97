@@ -7,7 +7,7 @@ class HammingParameterizedFile(unittest.TestCase):
         self.hamming = Hamming()
 
     def test_from_data_file(self):
-        with open("../data/zad1_data_tests") as file_tests:
+        with open("data/zad1_data_tests") as file_tests:
             for line in file_tests:
                 if line.startswith("#") or line.startswith("\n"):
                     continue
@@ -17,7 +17,7 @@ class HammingParameterizedFile(unittest.TestCase):
                     self.assertEqual(self.hamming.distance(str1, str2), expected)
 
     def test_exceptions_from_data_file(self):
-        with open("../data/zad1_data_exceptions") as file_exceptions:
+        with open("data/zad1_data_exceptions") as file_exceptions:
             for line in file_exceptions:
                 if line.startswith("#"):
                     continue
