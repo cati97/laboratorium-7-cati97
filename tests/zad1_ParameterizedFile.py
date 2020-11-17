@@ -29,3 +29,7 @@ class HammingParameterizedFile(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+# to work from here - change paths add ../
+# to work from lab7 in terminal using coverage run --source=src/ setup.py test path - data/zad1_data_exceptions
