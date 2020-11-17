@@ -3,6 +3,7 @@ from src.sample.zad2 import *
 from nose.tools import assert_equal
 from parameterized import parameterized, parameterized_class
 
+
 @parameterized([
     (1, 'I'),
     (2, 'II'),
