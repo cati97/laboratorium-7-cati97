@@ -25,7 +25,7 @@ class RomanParameterizedPackage(unittest.TestCase):
         ("medium", 163, 'CLXIII'),
         ("large", 911, 'CMXI'),
     ])
-    def test_floor(self, name, input, expected):
+    def test_expand(self, name, input, expected):
         self.assertEqual(roman(input), expected)
 
 
