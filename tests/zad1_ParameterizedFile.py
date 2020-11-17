@@ -13,8 +13,18 @@ class HammingParameterizedFile(unittest.TestCase):
                     continue
                 else:
                     data = line.split(',')
-                    str1, str2, expected = str(data[0]), str(data[1]), int(data[2].strip('\n'))
+                    str1, str2, expected = data[0], data[1], int(data[2].strip('\n'))
                     self.assertEqual(self.hamming.distance(str1, str2), expected)
+
+    def test_exceptions_from_data_file(self):
+        with open("../data/zad1_data_exceptions") as file_exceptions:
+            for line in file_exceptions:
+                if line.startswith("#"):
+                    continue
+                else:
+                    data = line.split(',')
+                    str1, str2 = data[0], data[1]
+                    self.assertRaises(ValueError, self.hamming.distance, str1, str2)
 
 
 if __name__ == '__main__':
